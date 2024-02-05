@@ -37,5 +37,7 @@ from .augmentations.trim import Trim
 from .core.composition import Compose, SpecCompose, OneOf, SomeOf
 from .spec_augmentations.spec_channel_shuffle import SpecChannelShuffle
 from .spec_augmentations.spec_frequency_mask import SpecFrequencyMask
+from .augmentations.whispered import Whispered
+from .augmentations.simulate_phone_call import SimulatePhoneCall
 
 __version__ = "0.34.1"

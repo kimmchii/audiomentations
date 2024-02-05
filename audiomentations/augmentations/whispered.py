@@ -9,9 +9,10 @@ class Whispered(BaseWaveformTransform):
     """Convert the audio to a whispered version"""
     supports_multichannel = False
 
-    def __init__(self, window_width:int, p: float=0.5):
+    def __init__(self, window_width:int=400, p: float=0.5):
         """
-        :param p: The probability of applying this transform
+        :param window_width: The width of the triangular window in Hz. (The suggested value is 400 Hz.)
+        :param p: The probability of applying this transform.
         """
         super().__init__(p)
         assert window_width is not None
