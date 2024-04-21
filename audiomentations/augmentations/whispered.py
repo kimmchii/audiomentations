@@ -1,5 +1,6 @@
 import pyworld as pw
-from scipy.signal import triang, lfilter
+from scipy.signal.windows import triang
+from scipy.signal import lfilter
 import numpy as np
 from numpy.typing import NDArray
 
